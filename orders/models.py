@@ -16,4 +16,4 @@ class Order(models.Model):
     status = models.ForeignKey(OrderStatus,on_delete=models.SET_NULL,null=True,blank=True)
 
     def __str__(self):
-        return f"Order {self.pk} - {self.status}
+        return f"Order {self.pk} - {self.status}"
